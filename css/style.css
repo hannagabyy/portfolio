@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;600;700&family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #462756;
+    color:#ffff;
+    font-family: "Radio Canada";
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header menu{
+    display: flex;
+    
+}
+menu li{
+    list-style: none;
+}
+header h1{
+    font-family: "Sacramento" ;
+    font-weight: 300;
+    font-size: 80px;
+}
