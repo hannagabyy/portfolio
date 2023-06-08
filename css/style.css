@@ -11,16 +11,61 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 header menu{
     display: flex;
+    padding: 20px;
+    margin-right: 30px;
+    gap: 20px;
     
 }
 menu li{
+    display: flex;
+    align-items: center;
     list-style: none;
 }
 header h1{
     font-family: "Sacramento" ;
     font-weight: 300;
     font-size: 80px;
+    padding: 13px 13px;
 }
+main{
+    display: flex;
+}
+main .sobre-mim{
+    padding: 80px;
+    text-align: center;
+    width: 70%;
+}
+main h2{
+    text-align: start;
+    font-weight: lighter;
+    font-size: 45px;
+}
+.sobre-mim .texto-digitado{
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.texto-digitado .cursor {
+    display: inline-block;
+    background-color: #D0A2FF;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.cursor.typing{
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: #D0A2FF; }
+    49% { background-color: #D0A2FF; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #D0A2FF; }
+  }
