@@ -36,8 +36,12 @@ main{
 }
 main .sobre-mim{
     padding: 80px;
+    font-size: 20px;
     text-align: center;
     width: 70%;
+}
+.sobre-mim p{
+    padding: 5px;
 }
 main h2{
     text-align: start;
@@ -45,27 +49,34 @@ main h2{
     font-size: 45px;
 }
 .sobre-mim .texto-digitado{
+    margin: 0 auto;
+    text-align: center;
     font-size: 3rem;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-align: center;
     overflow: hidden;
+    border-right: 2px solid #D0A2FF;
+    animation: blink 1s steps(25) infinite normal,typing steps(25) 5s  1s normal infinite both;
+    white-space: nowrap;
 }
-.texto-digitado .cursor {
-    display: inline-block;
-    background-color: #D0A2FF;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-}
-.cursor.typing{
-    animation: none;
-}
+
+
 @keyframes blink {
-    0%  { background-color: #D0A2FF; }
-    49% { background-color: #D0A2FF; }
-    50% { background-color: transparent; }
-    99% { background-color: transparent; }
-    100%  { background-color: #D0A2FF; }
+    from{
+        border-right-color: #D0A2FF;
+    }
+    to{
+        border-right-color: transparent;
+    }
+    
   }
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 31rem;
+    }
+}  
