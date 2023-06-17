@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="dev icon" href="./assets/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/50cab0d7de.js" crossorigin="anonymous"></script>
     <title>Hanna Santos - Portfólio</title>
 </head>
 <body>
@@ -13,33 +15,85 @@
         
         <nav>
             <menu>
-                <li><img src="./assets/home-icon.svg" alt="icone home">HOME</li>
-                <li><img src="./assets/sobre-icon.svg" alt="icone home">SOBRE</li>
-                <li><img src="./assets/projetos-icon.svg" alt="icone home">PROJETOS</li>
-                <li><img src="./assets/contato-icon.svg" alt="icone home">CONTATO</li>
+                <li><img src="./assets/sobre-icon.svg" alt="icone sobre mim"><a href="#sobre-mim">SOBRE MIM</a></li>
+                <li><img src="./assets/skills.svg" alt="icone skills"><a href="#skills">SKILLS</a></li>
+                <li><img src="./assets/projetos-icon.svg" alt="icone projetos"><a href="#projetos">PROJETOS</a></li>
+                <li><img src="./assets/contato-icon.svg" alt="icone contato"><a href="#">CONTATO</a></li>
             </menu>
         </nav>
     </header>
     <main>
-        <div class="sobre-mim">
-            <h2>Sobre Mim</h2>
-            <h3 class="texto-digitado">Olá eu sou a Hanna<span class="cursor">&nbsp;</span></p></h3>
-            <p>Me interesso pela área do front-end estou aprendendo sobre UX, design e responsividade.<br>
-                Graduanda em Ciência da Computação na UESPI .<br>
-            No momento faço diversos projetos em Html, Css, Javascript ,meu próximo passo é aprender react. Utilizo também as tecnologias : Mysql,Git, Github.
-            </p>
-            <h4>Habilidades Intermediárias/Avançadas:</h4>
-            <span>ícones...</span>
-        </div>
-        <section>
-            <aside>
-            <img src="./assets/perfil.jpg" alt="foto-hanna">
-            
-            <div>
-
+        <div id="main">
+            <div id="sobre-mim">
+                <div>
+                    <h2 class="titulos">Sobre Mim</h2>
+                    <span class="linha"></span>
+                    <h3 class="texto-digitado">Olá eu sou a Hanna<span class="cursor">&nbsp;</span></p></h3>
+                    <p>Me interesso pela área do front-end estou aprendendo sobre UX, design e responsividade.
+                        Graduanda em Ciência da Computação na UESPI .
+                    No momento faço diversos projetos em Html, Css, Javascript ,meu próximo passo é aprender react. Utilizo também as tecnologias : Mysql,Git, Github.
+                    </p>
+                </div>
+                <span id="educacao">   
+                    <h4 class="sub-titulos">Formação <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>:</h4>
+                    <span>Bacharelado em Ciência da Computação - Universidade Estadual do Piauí.</span>
+                </span>
+                
+               
             </div>
-            </aside>
-        </section>
+            
+            <section id="foto">
+                <img src="./assets/perfil.jpg" alt="foto-hanna">
+                
+                <div class="linha-navegacao">
+
+                </div>
+            
+            </section>
+        </div>
+        <div id="skills">
+            <h2 class="titulos">Skills</h2>
+            <span class="linha"></span>
+            <div id="habilidades">
+                <div>
+                    <h4>Habilidades Avançadas:</h4>
+                    <img class="icones" src="./assets/html-icon.svg" alt="">
+                    <img class="icones" src="./assets/css-icon.svg" alt="">
+                    <img class="icones" src="./assets/bootstrap-icon.svg" alt="">
+                    <img class="icones" src="./assets/mysql-icon.svg" alt="">
+                    
+                </div>
+                <div>
+                    <h4>Habilidades Intermediárias:</h4>
+                    <img class="icones" src="./assets/js-icon.svg" alt="">
+                    <img class="icones" src="./assets/git-icon.svg" alt="">
+                    <img class="icones" src="./assets/git-hub-icon.svg" alt="">
+                    <img class="icones" src="./assets/python-icon.svg" alt="">
+                    <img class="icones" src="./assets/c-icon.svg" alt="">
+                    <h4> *Inglês Intermediário</h4>
+                </div>
+                
+                <div>
+                    <h4>Habilidades Básicas:</h4>
+                    <img class="icones" src="./assets/django-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="projetos">
+            <h2 class="titulos">Projetos</h2>
+            <span class="linha"></span>
+            
+            </div>
+        </div>
+
+        <div id="contato">
+            <h2 class="titulos">Contato</h2>
+            <span class="linha"></span>
+            <h4>Me encontre aqui : ⤵️</h4>
+            <a href="https://github.com/hannagabyy" target="_blank"><img class="icones" src="./assets/git-hub-icon.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/hannagsantos/" target="_blank"><img class="icones" src="./assets/linkedin-icon.svg" alt=""></a>
+        </div>
     </main>
 </body>
 </html>

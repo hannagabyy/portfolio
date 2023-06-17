@@ -3,9 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #462756;
-    color:#ffff;
+   
+    color:#B3B3B3;
+    ;
     font-family: "Radio Canada";
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background: #462756;
+    height: 100vh;
 }
 header{
     display: flex;
@@ -25,34 +33,71 @@ menu li{
     align-items: center;
     list-style: none;
 }
+li a{
+    padding: 5px;
+}
+menu li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 header h1{
     font-family: "Sacramento" ;
     font-weight: 300;
     font-size: 80px;
     padding: 13px 13px;
+    color: #FFFFFF;
 }
-main{
+main{  
+    margin: 20px 60px; 
+}
+#main{
     display: flex;
 }
-main .sobre-mim{
-    padding: 80px;
+#main #sobre-mim,#skills{
+    width: 60rem;
+}
+#main #sobre-mim{
     font-size: 20px;
     text-align: center;
-    width: 70%;
+    position: relative;
 }
-.sobre-mim p{
+#sobre-mim p{
     padding: 5px;
 }
-main h2{
-    text-align: start;
+.titulos{
+    text-align: left;
     font-weight: lighter;
-    font-size: 45px;
+    font-size: 30px;
+    color: #FFFFFF;
 }
-.sobre-mim .texto-digitado{
-    margin: 0 auto;
+.sub-titulos{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+#educacao{
+    display: flex;
+   align-items: center;
+    font-size: 20px;
+
+}
+span.linha::after,span .linha::before  {
+    position:absolute;
+    content: '';
+    width:130px;
+    height: 4px;
+    background-color: #FFFFFF;
+    left: 0;
+}
+#sobre-mim .texto-digitado{
+    background-image: linear-gradient(to bottom, #D0A2FF, #8848C8, #5509A1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
+    margin: 20px auto;
     text-align: center;
     font-size: 3rem;
-    /* padding: 0.5rem; */
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-align: center;
@@ -61,7 +106,49 @@ main h2{
     animation: blink 1s steps(25) infinite normal,typing steps(25) 5s  1s normal infinite both;
     white-space: nowrap;
 }
-
+#foto{
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+#foto img{
+    width: 302px;
+    height: 302px;
+    border-radius: 200px;
+    border: 5px solid #FFFFFF;
+}
+#skills{
+    
+    position: relative;
+    padding: 10px;
+}
+#habilidades{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 30px;
+}
+#habilidades h4{
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+.icones{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+#projetos,#contato{
+    position: relative;
+}
+#contato h4{
+    padding: 20px;
+}
+#contato a{
+    margin: 20px;
+}
 
 @keyframes blink {
     from{
